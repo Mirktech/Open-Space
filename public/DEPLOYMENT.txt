@@ -1,0 +1,19 @@
+Open Space Centre website - hosting handoff
+
+Upload the contents of this build directory to the website's public web root.
+Do not upload the source code or node_modules.
+
+This is a static React website. Configure the web server to serve index.html
+for website routes such as /about, /programs, /millions-more, /get-involved,
+and /resources. Do not rewrite /wp-json requests: the site uses the existing
+WordPress REST API to load editable page content when a matching page is
+published. The website remains usable with its included starter content if
+WordPress content is unavailable. If WordPress is hosted on a different
+domain, configure its REST API to allow requests from the website's domain.
+
+The website files are built for a domain root (for example,
+https://example.org/). If it will be installed in a subdirectory, tell the
+developer before deployment so the asset base path can be rebuilt.
+
+After deployment, check the homepage, each listed route, any connected
+WordPress page content, and the mobile layout.
